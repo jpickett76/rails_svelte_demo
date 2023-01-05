@@ -7,6 +7,8 @@ RUN apk add git
 
 RUN apk add --update build-base bash bash-completion libffi-dev tzdata postgresql-client postgresql-dev nodejs npm yarn
 
+RUN yarn add svelte esbuild-svelte
+
 WORKDIR /app
 
 COPY Gemfile* /app/
